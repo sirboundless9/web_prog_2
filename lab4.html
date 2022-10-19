@@ -5,15 +5,15 @@
         <title>Кладов Анатолий. ФБИ-01. Лабораторная работа 4</title>
         <style>
             body {
-                background-color:burlywood;
-                color:rgb(134, 134, 134);
+                background-color:rgb(250, 211, 161);
+                color:rgb(100, 100, 100);
                 font-size: 22px;
                 font-family: Verdana, sans-serif;
                 margin: 0;
             }
             .header {
                 background-color: rgb(233, 205, 133);
-                color:rgb(95, 18, 167);
+                color:rgb(62, 0, 121);
                 font-size: 32px;
                 font-weight: bold;
                 text-align: left;
@@ -39,6 +39,29 @@
             p:hover {
                 color:rgb(251, 251, 255);
                 text-shadow: 3px 3px 5px #aaa;
+            }
+            .header:hover {
+                color:cornflowerblue;
+            }
+            .footer:hover {
+                background-color: crimson;
+                color:rgb(251, 251, 255)
+            }
+            p::first-letter {
+                font-weight: bold;
+                font-size: 30px;
+            }
+            p::first-line {
+                font-weight: bold;
+            }
+            h1:active {
+                transform: scale(5, 10);
+            }
+            .header:active {
+                transform: scaleX(-1);
+            }
+            p:active {
+                transform: skewX(20deg);
             }
         </style>
     </head>
