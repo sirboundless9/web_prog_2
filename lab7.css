@@ -34,3 +34,6 @@ p {
 background-color: bisque;
 text-align: center;
 }
+.snowflakes {
+    position: absolute;
+}

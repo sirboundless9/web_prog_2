@@ -43,4 +43,20 @@ function showAlert() {
             steps[i].innerHTML = 'Блок номер ' + Number(i +1);
         }
     }
+function makeSnowflakes() {
+    let snegopad = document.querySelector('#Snegopad');
+    let stepCount = 50;
+    for (let i = 0; i<stepCount; i++) {
+        snegopad.innerHTML += '<img class="snowflakes" src="https://w7.pngwing.com/pngs/727/200/png-transparent-snowflake-graphy-snowflakes-blue-branch-symmetry-thumbnail.png">';
+    }
+    let snowflakes = document.querySelectorAll('.snowflakes');
+    let screenWidth = window.screen.width;
+    let screenHeight = window.screen.height;
 
+    for (let i = 0; i<snowflakes.length; i++) {
+    snowflakes[i].style.left = Math.random() * (screenWidth-50) + 'px';
+    snowflakes[i].style.top = Math.random() * (screenHeight-50) + 'px';
+    snowflakes[i].style.width = Math.random() * 100 + 'px';
+    }
+    
+}
