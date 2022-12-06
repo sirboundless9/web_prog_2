@@ -7,9 +7,19 @@ function showAlert() {
     let greeting;
     if(userAge <= 17) {
         greeting = 'Здравствуй, ';
+        if(userSex == 'female') {
+            greeting += 'девочка ';
+        }
+        else greeting += 'мальчик ';
     }
     else {
         greeting = 'Здравствуйте, ';
+        if(userSex == 'female') {
+            greeting += 'госпожа ';
+        }
+        else {
+            greeting += 'господин ';
+        }
     }
     alert(greeting + userName + ' ' + userSurname + '\n' + 'Ваш возраст: ' + userAge)
     let r = Math.round(Math.random()*255);
