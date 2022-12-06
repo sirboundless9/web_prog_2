@@ -43,3 +43,4 @@ function showAlert() {
             steps[i].innerHTML = 'Блок номер ' + Number(i +1);
         }
     }
+
